@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image" href="title.jpg">
+	<title>PORTFOLIO</title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 15px 0px 10px 0px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+</style>
+</head>
+<body>
+
+    <section>
+    	<!---navigation----->
+    	<nav>
+    		<!---logo-->
+    		<a href="#" class="logo">PORTFOLIO</a>
+    		<!--menu-->
+    		<ul>
+    			<li><a href="index.html" class="active">Home</a></li>
+    			<li><a href="#about">About</a></li>
+    			<li><a href="#skills">Skills</a></li>
+    			<li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+    		</ul>
+    		
+    	</nav>
+    	<!---text----->
+    	<div class="text-container">
+    		<p>Hello,</p>
+    		<p>I am KEERTHANA</p>
+    		<p>Future Developer</p>
+    		<button id="myBtn" class="hire-btn">Hire me</button>
+            <a href="Keerthana resume.docx" download>
+    		<button class="down-cv">Download</button></a>
+    	</div>
+    	<!----model--->
+    	<img src="model2.png" class="model" alt="model">
+    </section>
+    <!---about-section--->
+    <div class="about-container">
+    	<!---img------------->
+    	<img src="model.jpg">
+    	<!---about-text--------->
+    	<div class="about-text" id=about>
+    		<p>About Me</p>
+    		<p>Future Developer</p>
+    		<p>Hello...My name is Keerthana Thilagam. I am a third-year student pursuing Computer Science at Panimlar Engineering college.My hobbies include baking and sewing.</p>
+    		<p>I am interested in the web development domain and working on it right now. Also, I am doing courses in that domain and learning new things.I do have a blogging experience too. </p>
+    	</div>
+    </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>I am delighted to receive your offer and looking forward to work in your organization.  &#10071;<span style='font-size:20px;'>&#128187;</span></p>
+  </div>
+
+</div>
+    <!------qualification-------->
+    <div class="qualification" id="interests">
+    	<!---qualification-text------->
+    	<div class="qualification-text">
+            <!----Skiils------->
+    	<p>Interests</p>
+        <p>Check this out..!!</p>
+    	<p>My ultimate goal is to become a Developer as I have always been influenced in that particular field. Also, I am a quick learner and I have basic knowledge of web development. I have also done a certified course in INTRODUCTION TO WEB DEVELOPMENT offered by Coursera.</p>
+    </div>
+    <!---box---------->
+    <div class="box-container">
+    	<!---1------>
+    	<div class="box-1">
+    		<span>1</span>
+    		<p class="heading">Front-end Developer</p>
+    		<p class="details">I am interested in this domain and will do projects using HTML, CSS and JvaScript. I have learned more about these topics only because of <strong>W3SCHOOLS</strong> website which provides us lots of resources and excercise for practice.</p><a href="https://w3schools.com" target="_blank">
+    		<button>Read More</button></a>
+    	</div>
+    	<!-----2--------->
+    	<div class="box-2">
+    	<span>2</span>
+    	<p class="heading">Blogger</p>
+    	<p class="details">I don't have much experience in this , but I am getting used to it lately and loved to do it.<br>What should I blog about?<br>Consider your passions.<br>Do check out <strong>MEDIUM</strong> to learn more.</p><a href="https://www.medium.com" target="_blank">
+    	<button>Read More</button></a></div>
+    	<!-----3---------->
+    	<div class="box-3">
+    		<span>3</span>
+    		<p class="heading">Back-end Developer</p>
+    		<p class="details">I have basic knowledge about this and learning about PHP and practicing it with framework. Check out <strong>COURSERA</strong> to learn more</p><a href="https://www.coursera.org" target="_blank">
+    		<button>Read More</button></a></div>
+    </div>
+    <div class="qualification-text" id="skills">
+      <p>Skillset</p>
+    </div>
+    <div class="box-container">
+    <!----------4----------->
+       <div class="box-4">
+        <span>1</span>
+        <p class="heading">Developer skills</p>
+        <p class="details">
+          <ul style="list-style-type: square;font-color: #fff;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+          </ul>
+        </p>
+        <button>Read More</button></div>
+            <!----------5----------->
+       <div class="box-5">
+        <span>2</span>
+        <p class="heading">Soft skills</p>
+        <p class="details">
+          <ul style="list-style-type: square;font-color: #fff;">
+            <li>Adaptability</li>
+            <li>Active learning</li>
+            <li>Interpersonal Skills</li>
+          </ul>
+        </p>
+        <button>Read More</button></div>
+                    <!----------6----------->
+       <div class="box-6">
+        <span>3</span>
+        <p class="heading">Software skills</p>
+        <p class="details">
+          <ul style="list-style-type: square;font-color: #fff;">
+            <li>Mathematical Aptitude</li>
+            <li>Programming Language(C, C++, Python, Java)</li>
+            <li>Problem-solving skills</li>
+          </ul>
+        </p>
+        <button>Read More</button></div>
+    </div>
+    <div class="wrapper">
+      <div class="img-area">
+        <img src="about1.gif">
+      </div>
+      <div class="skills-area">
+        <h2>DEVELOPER SKILLS</h2>
+        <ul class="box">
+          <li><span class="line box1"></span><b>HTML &nbsp; (90%)</b></li>
+          <li><span class="line box2"></span><b>CSS &nbsp; (85%)</b></li>
+          <li><span class="line box3"></span><b>Javascript &nbsp; (80%)</b></li>
+          <li><span class="line box4"></span><b>PHP &nbsp; (50%)</b></li>
+        </ul>
+      </div>
+    </div>
+    <!-------contact me--->
+    <div class="contact-me">
+    	<p>If You Have Any Project In your Mind</p>
+        <a href="#contact">
+    	<button>Contact Me</button></a>
+    </div>
+  <div class="container" id=contact>
+  <div class="row">
+    <div class="column">
+      <img src="contact1.png" style="width:550px">
+    </div>
+    <div class="column">
+      <form action="submit.html">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="email">E-mail</label>        
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="India">India</option>
+          <option value="Europe">Europe</option>
+          <option value="USA">USA</option>
+          <option value="Japan">Japan</option>
+        </select>
+        <label for="subject" required>Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+    <!-----footer---------->
+    <footer>
+    	<p>Guys!!!!</p>
+    	<p>If You have any projects to do, DM me.</p>
+    	<!---------social---------->
+    	<div class="social-icons">
+    		<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    		<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    		<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    		<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    	</div>
+    	<!---copyright---->
+    	<p class="copyright">Copyright <i class="fa fa-copyright"></i> by Going-To Internet</p>
+    </footer>
+    <!----attached social bar------>
+    <div class="a-social-b">
+    		<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    		<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    		<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    		<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    	</div>
+        <script>
+            // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+        </script>
+</body>
+</html>

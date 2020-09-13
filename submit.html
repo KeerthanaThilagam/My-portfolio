@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+	 <link rel="icon" type="image" href="submit.jpg">
+	<title>YOUR RESPONSE</title>
+<style>
+	h1,p{
+		text-align: center;
+		font-family: 'Ranchers', cursive;
+	}
+	body{
+		background: url(submit.gif);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+.text-container{
+	position: absolute;
+	left: 46%;
+	top: 19%;
+	bottom: 80%;
+	transform: translate(-13%,-42%);
+}
+
+.text-container button{
+	width: 130px;
+	height: 42px;
+	border-radius: 10px;
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 14px;
+	outline: none;
+	margin: 0px 10px;    
+}
+@media(max-width: 750px){
+	.text-container{
+		top: 30%;
+	}
+	.text-container button{
+		margin: 5px;
+	}
+}
+.hire-btn{
+	border: 2px solid #373636;
+	color: #fff;
+	background-color: #000;
+}
+
+button:hover{
+color: #000;
+background-color: #fff;
+transition: all ease 0.5s;
+}
+</style>
+</head>
+<body>
+<h1>Thank   you    for   your    response.</h1>
+<p style="font-size: 20px;">Kindly click here to go back..</p>
+<p></p>
+<div class="text-container">
+<button onclick="a()"  class="hire-btn">Revert
+</button>
+</div>
+<script>
+function a(){
+	location.replace("index.html");
+	alert("Have a nice day!!!");
+}
+</script>
+</body>
+</html>
